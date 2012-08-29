@@ -15,7 +15,7 @@ END_DATE = Date.today
 
   while !done
     # Shortcut
-    dict = Oj.load(open(%(http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=site:medium.com%2Fp%2F+%22#{datetime.strftime("%^B")}+#{datetime.strftime("%-d")}%2C+#{datetime.strftime("%Y")}%22&start=#{offset}&key=AIzaSyAjwaJXfSv5SIsh5JycfcilhGSAmwHoC8g)))
+    dict = Oj.load(open(%(http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=site:medium.com%2Fp%2F+%22#{datetime.strftime("%^B")}+#{datetime.strftime("%-d")}%2C+#{datetime.strftime("%Y")}%22&start=#{offset})))
     results = []
     
     if dict['responseData']  
